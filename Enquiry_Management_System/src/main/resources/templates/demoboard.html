@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <ul>
+        <li th:each="employee : ${alluser}">
+            <a th:href="@{/admin/employee/{id}(id=${employee.userId})}" th:text="${employee.userEmail}">Employee</a>
+            
+             <a th:href="@{/adminlogin/{userEmail}/{passWord}(userEmail=${employee.userEmail}, passWord=${employee.passWord})}" th:text="${employee.userEmail}">Employee</a>
+        </li>
+    </ul>
+</body>
+</html>

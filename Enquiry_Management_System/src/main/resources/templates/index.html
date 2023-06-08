@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ashok IT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <style>
+        .footer {
+            
+            width: 100%;
+            background-color: black;
+            color: whitesmoke;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        .course-card {
+            margin-bottom: 20px;
+        }
+
+        .course-img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .feature-card {
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Custom styles for the contact section */
+        #contact {
+            margin-top: 10px;
+            padding: 40px 0;
+            background-color: #f8f9fa;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .card-text {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .list-group-item {
+            border: none;
+            font-size: 14px;
+            padding: 5px 0;
+            background-color: transparent;
+        }
+
+        .list-group-item i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"> <img alt="" src="images/skill2.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+                    <a href="login" class="btn btn-danger">Login</a>
+                    <a href="admin" class="btn btn-success mx-3">Admin</a>
+                </div>
+            </div>
+        </nav>
+
+        <h2 class="text-center m-4">Our Top Features</h2>
+
+        <section id="features" class="my-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <img src="images/industry.jpg" class="card-img-top" alt="Feature 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Industry-Driven Curriculum</h5>
+                            <p class="card-text">Stay updated with a curriculum designed to meet industry demands.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <img src="images/expert.jfif" class="card-img-top" alt="Feature 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Expert Instructors</h5>
+                            <p class="card-text">Learn from experienced professionals in the IT industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card">
+                        <img src="images/handon.avif" class="card-img-top" alt="Feature 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Hands-on Training</h5>
+                            <p class="card-text">Gain practical skills through hands-on training and real-world
+                                projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="text-center m-4">Trending Courses</h2>
+
+        <!-- IT Courses Section -->
+        <section class="container" id="courses">
+            <div class="row" >
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <img src="images/course_1.jpg" class="card-img-top" alt="Course 1">
+                        <div class="card-body">
+                            <h5 class=" text-center card-title">AWS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <img src="images/course_2.jpg" class="card-img-top" alt="Course 2">
+                        <div class="card-body">
+                            <h5 class="text-center card-title">DevOps</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card course-card">
+                        <img src="images/course_3.jpg" class="card-img-top" alt="Course 3">
+                        <div class="card-body">
+                            <h5 class="text-center card-title">Spring Boot & Mocroservices</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="container" id="contact">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Contact Us</h5>
+                            <p class="card-text">For any inquiries or assistance, please feel free to contact us:</p>
+                            <ul class="list-group">
+                                <li class="list-group-item"><i class="bi bi-telephone-fill me-2"></i>Phone: +1234567890
+                                </li>
+                                <li class="list-group-item"><i class="bi bi-envelope-fill me-2"></i>Email:
+                                    info@skilltech.com</li>
+                                <li class="list-group-item"><i class="bi bi-geo-alt-fill me-2"></i>Address: 123 Street,
+                                    City, Country</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="footer">
+            <p>&copy; 2023 SkillTech Solutions. All rights reserved.</p>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
